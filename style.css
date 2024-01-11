@@ -42,6 +42,15 @@ table {
 	border-spacing: 0;
 }
 /* Custom CSS starts here */
+button {
+  background-color: #0284c7;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.5rem 1.5rem;
+}
 html {
   font-family: "Roboto", sans-serif;
 }
@@ -51,8 +60,56 @@ body {
   grid-template: 200px auto / 250px auto;
 }
 header {
-  background-color: red;
+  background-color: white;
   grid-column-start: 2;
+  padding: 1.5rem 3rem;
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+header > div,
+header > div > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header > div:first-child {
+  margin-bottom: 2rem;
+}
+header > div:first-child .icon {
+  width: 25px;
+  margin-right: 1rem;
+}
+header > div:first-child input {
+  border-radius: 1rem;
+  background-color: #e5e7eb;
+  border: 1px solid #e5e7eb;
+  padding: 5px;
+  width: 500px;
+}
+header > div:first-child .avatar {
+  width: 40px;
+  margin-right: 1rem;
+}
+header > div:last-child img {
+  width: 75px;
+  margin-right: 1rem;
+}
+header > div:last-child > div:first-child > div {
+  display: flex;
+  flex-direction: column;
+}
+header > div:last-child > div:first-child > div > span:first-child {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+header > div:last-child > div:first-child > div > span:last-child {
+  font-size: 1.5rem;
+}
+header > div:last-child button {
+  margin-right: 1rem;
+}
+header > div:last-child button:last-child {
+  margin-right: 0;
 }
 nav {
   background-color: #0284c7;
@@ -67,7 +124,6 @@ nav > div:first-child {
   align-items: center;
 }
 nav .icon {
-  width: 20px;
   margin-right: 20px;
   filter: invert(100%) sepia(78%) saturate(0%) hue-rotate(82deg)
           brightness(109%) contrast(101%);
@@ -90,5 +146,9 @@ nav > ul > li > span {
   font-weight: bold;
 }
 main {
-  background-color: green;
+  background-color: #e5e7eb;
+  margin-top: 5px;
+}
+.icon {
+  width: 20px;
 }
